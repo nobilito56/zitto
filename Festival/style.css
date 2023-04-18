@@ -1,0 +1,664 @@
+@font-face {
+    font-family: "ragasta";
+    src: url(fonts/ragasta/Ragasta.otf);
+}
+
+@font-face {
+    font-family: "tahoma";
+    src: url(fonts/tahoma/Tahoma\ Regular\ font.ttf);
+}
+
+@font-face {
+    font-family: "tango";
+    src: url(fonts/tangosans/TangoSans.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: tahoma;
+    margin: 0;
+}
+
+button {
+    border: none;
+    background-color: #F5F5F5;
+    margin: 10% 0;
+
+}
+
+h1 {
+    font-family: ragasta;
+    text-align: center;
+}
+
+h2 {
+    font-family: ragasta;
+    text-align: center;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    gap: 25%;
+}
+
+.navHome {
+    background-color: #1A2125;
+}
+
+.navBoutique {
+    background-color: #352b1d;
+
+}
+
+.navPass {
+    background-color: #393836;
+}
+
+.languagebutton {
+    color: #F5F5F5;
+    margin: 5%;
+    transition: 1s;
+    position: relative;
+    box-shadow: inset 0 0 0 0 #FB8B24;
+    font-size: 1vw;
+}
+
+.languagebutton::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FB8B24;
+    top: 100%;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.languagebutton:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navDiv {
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    /* width: 50vw; */
+}
+
+.navDivLink {
+    color: #F5F5F5;
+    font-family: tahoma;
+    font-size: 1vw;
+    transition: 0.5s;
+    position: relative;
+}
+
+.youreHere {
+    color: #F5F5F5;
+    font-family: tahoma;
+    font-size: 1vw;
+    color: #FB8B24;
+}
+
+.navDivLink::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FB8B24;
+    top: 100%;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navDivLink:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.logo {
+    width: 10vw;
+    filter: invert();
+}
+
+.sectionTitle {
+    background-position: bottom;
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.sectionTitle h2 {
+    color: #F5F5F5;
+    text-transform: uppercase;
+    font-size: 5vw;
+}
+
+.reservation {
+    background-image: url(media/passBG.png);
+}
+
+.boutique {
+    background-image: url(media/boutiqueBG.png);
+}
+
+.info {
+    background-image: url(media/infoBG.png);
+}
+
+.calendrier {
+    background-image: url(media/calendrierBG.png);
+}
+
+.homeMain {
+    background-image: url(media/main.png);
+    width: 100vw;
+    height: 250vh;
+    background-size: cover;
+    position: relative;
+}
+
+.homeTitle {
+    margin: 0;
+    position: relative;
+    top: 15%;
+    color: #F5F5F5;
+    font-size: 4vw;
+}
+
+.homeTitle2 {
+    margin: 0;
+    color: #F5F5F5;
+    font-size: 2vw;
+    position: relative;
+    top: 15%;
+    left: 47%;
+    display: inline-block;
+}
+
+.homeTitle2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #F5F5F5;
+    top: 100%;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.homeTitle2:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.scrollButton {
+    position: relative;
+    transform-origin: center;
+    top: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.scrollButtonImg {
+    transform-origin: center;
+    width: 5vw;
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+.scrollButtonImg:hover {
+    opacity: 100%;
+}
+
+.infoHome {
+    position: relative;
+    top: 30%;
+    width: 100VW;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.infoHomeDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.infoHomeDiv p {
+    margin: 0;
+    position: relative;
+    top: 25px;
+}
+
+.infoHome-arrow {
+    height: 50vh;
+}
+
+.footer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    padding-bottom: 5%;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: baseline;
+    gap: 10%;
+    border-top: 1px solid #1A2125;
+    padding-top: 5vw;
+    padding-right: 100px;
+}
+
+.logo-footer img {
+    width: 10vw;
+}
+
+.info-footer {
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-footer a {
+    color: #FB8B24;
+    transition: 0.5s;
+}
+
+.info-footer a:hover {
+    color: #1D1D1B;
+}
+
+#ovale1 {
+    fill: #F5F5F5;
+    position: relative;
+    top: 50px;
+}
+
+#ovale2 {
+    fill: #F5F5F5;
+    position: relative;
+    bottom: 50px;
+
+}
+
+.homeVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -20vh;
+
+}
+
+.homeVideo video {
+    width: 80vw;
+    height: auto;
+}
+
+
+
+/*PASS PAGE*/
+
+.passSection {
+    margin: 5% 15%;
+    width: calc((100vw - 5vw) - 30%);
+}
+
+
+.instruction {
+    margin: 0;
+    /* position: relative; */
+    top: 3vh;
+}
+
+.passCards {
+    display: flex;
+    gap: 5%;
+
+}
+
+.passCard {
+    width: 100%;
+
+}
+
+.passCardImg {
+    width: 100%;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+
+
+.passCardTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 35%;
+}
+
+.passText {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5vw;
+    margin: 0;
+    color: #F5F5F5;
+}
+
+.dayText {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.5vw;
+    color: #F5F5F5;
+}
+
+.chooseButton {
+    background-color: #1D1D1B;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    position: relative;
+    transform-origin: center;
+    border-radius: 10px;
+    top: -18%;
+    left: 13%;
+    width: 15vw;
+    height: 2vw;
+    font-size: 1vw;
+    transition: 0.5s;
+    margin: 0;
+}
+
+.chooseButton:hover {
+    box-shadow: inset 15em 0 0 0 #F5F5F5;
+    color: #1D1D1B;
+}
+
+.chooseButton a {
+    color: #F5F5F5;
+    transition: 0.5s;
+    width: 15vw;
+    display: inline-block;
+}
+
+.chooseButton a:hover {
+    color: #1D1D1B;
+}
+
+
+
+.buttonsdiv {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10% 0;
+}
+
+.section3Button {
+    position: inherit;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*INFORMATION PAGE*/
+.infoMain {
+    margin-top: 10vh;
+}
+
+.infoSection {
+    margin: 0 5%;
+}
+
+.infoSection h2 {
+    text-align: left;
+}
+
+.partners {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.partners img {
+    width: 30vw;
+    max-width: 250px;
+    object-fit: contain;
+}
+
+.partners3 {
+    width: 20% !important;
+    max-width: 150px !important;
+}
+
+/* Boutique page */
+.shopping {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 5%;
+}
+
+.shoppingContent {
+    width: 40vw;
+    height: 50vh;
+    box-shadow: 0px 0px 27px 7px rgba(133, 133, 133, 0.42);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5%;
+    box-sizing: border-box;
+    transition: box-shadow 0.5s;
+}
+
+.shoppingContent:hover {
+    box-shadow: 0px 0px 27px 7px rgba(31, 31, 31, 0.5);
+}
+
+.shoppingContent img {
+    height: 70%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.shoppingContentInfo {
+    width: 88%;
+    text-align: left;
+
+}
+
+/* calendrier page */
+
+.artist-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+    padding: 10vh 0;
+}
+
+.artist-card {
+    display: flex;
+    width: 80vw;
+    height: auto;
+    box-shadow: 0px 0px 27px 7px rgba(133, 133, 133, 0.42);
+    border-radius: 20px;
+    padding: 20px 20px;
+    gap: 20px;
+
+}
+
+.artist-img {
+    width: 30%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* .artist-description-title{
+    display: flex;
+   align-items: baseline;
+   justify-content: space-around;
+} */
+
+.artist-section-title {
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+.artist-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artist-description h2 {
+    font-size: 3vw;
+    text-align: left;
+    margin-bottom: 0;
+    margin: 20px 0;
+}
+
+.artist-description h3 {
+    font-size: 1.5vw;
+    font-family: tahoma;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+/* Hotels pages */
+
+.hotel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+    margin: 5% 0;
+}
+
+.billet-card {
+    box-shadow: 0px 0px 27px 7px rgba(133, 133, 133, 0.42);
+    width: 90vw;
+    border-radius: 20px;
+}
+
+.billet-card-title {
+    font-family: ragasta;
+    font-size: 2vw;
+    margin: 5% 0 0 5%;
+    color: #9A031E;
+}
+
+.billet-description-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2.5% 5%;
+}
+
+.billet-description-card img {
+    width: 45vw;
+    border-radius: 20px;
+}
+
+.billet-description-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.billet-description-title {
+    width: 2vw;
+    font-family: "ragasta";
+    color: #9A031E;
+    margin: 0;
+    width: auto;
+}
+
+.billet-decription-prix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    margin-left: 20vw;
+
+}
+
+.billet-decription-prix button:hover{
+    box-shadow: inset 15em 0 0 0 #9A031E;
+    color: #F5F5F5;
+}
+
+.billet-decription-prix h3 {
+    color: #9A031E;
+    text-align: center;
+    margin: 0;
+    font-size: 2vw;
+    width: 10vw;
+    padding: 0 0 1vw 5vw;
+}
+
+.billet-description-warning {
+    display: flex;
+}
+
+.billet-description-warning p {
+    font-size: 1vw;
+}
+
+.billet-description-warning a {
+    color: #9A031E;
+    text-decoration: underline;
+}
+
+.billet-description-warning img {
+    width: 3vw;
+    height: 3vw;
+    justify-content: baseline;
+}
