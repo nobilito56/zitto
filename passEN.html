@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/faviconzitto3.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="headerHome">
+        <nav class="nav navPass">
+            <div class="navDiv">
+                <a class="navDivLink" href="programmeEN.html">Program</a>
+                <a class="youreHere" href="passEN.html">Tickets</a>
+                <a href="home.html"><img class="logo" src="media/logo.svg" alt="logo opéra Zitto"></a>
+                <a class="navDivLink" href="boutiqueEN.html">Shop</a>
+                <a class="navDivLink" href="infoEN.html">Information</a>
+            </div>
+            <a href="pass.html" class="languagebutton">FR</a>
+        </nav>
+
+    </header>
+    <section class="sectionTitle reservation">
+        <h2>Tickets</h2>
+        <a href="#scrollPass"><img class="scrollButtonImg" src="media/scroll.png" alt="scroll"></a>
+    </section>
+    <section class="passSection choice1" id="scrollPass">
+        <h2 class="instruction">Pass choice</h2>
+        <div class="passCards">
+            <div class="passCard">
+                <div class="passCardTitle">
+                    <p class="passText">Pass</p>
+                    <p class="dayText">1 day</p>
+                </div>
+                <img class="passCardImg" src="media/1dayPass.svg" alt="pass 1 jour">
+                <button onclick="showSection('section1')" class="chooseButton passCardButton"><a
+                        href="#section1">Choose</a></button>
+            </div>
+            <div class="passCard">
+                <div class="passCardTitle">
+                    <p class="passText">Pass</p>
+                    <p class="dayText">2 days</p>
+                </div>
+                <img class="passCardImg" src="media/2daysPass.svg" alt="pass 2 jours">
+                <button onclick="showSection('section2')" class="chooseButton passCardButton"><a
+                        href="#section2">Choose</a></button>
+            </div>
+            <div class="passCard">
+                <div class="passCardTitle">
+                    <p class="passText">Pass</p>
+                    <p class="dayText">3 days</p>
+                </div>
+                <img class="passCardImg" src="media/3daysPass.svg" alt="pass 3 jours">
+                <button onclick="showSection('section3')" class="chooseButton passCardButton"><a
+                        href="#section3">Choose</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="section1" class="passSection choice2_1 hidden">
+        <h2 class="instruction">Day choice</h2>
+        <div class="passCards">
+            <div class="passCard">
+                <div class="passCardTitle">
+                    <p class="passText">Pass</p>
+                    <p class="dayText">Friday</p>
+                </div>
+                <img class="passCardImg" src="media/passday1.svg" alt="pass 1 jour">
+                <button onclick="showSection2('section3')" class="chooseButton passCardButton"><a
+                        href="#section3">Choose</a></button>
+            </div>
+            <div class="passCard">
+                <div class="passCardTitle">
+                    <p class="passText">Pass</p>
+                    <p class="dayText">Saturday</p>
+                </div>
+                <img class="passCardImg" src="media/passday2.svg" alt="pass 2 jours">
+                <button onclick="showSection2('section3')" class="chooseButton passCardButton"><a
+                        href="#section3">Choose</a></a></button>
+            </div>
+            <div class="passCard">
+                <div class="passCardTitle">
+                    <p class="passText">Pass</p>
+                    <p class="dayText">Sunday</p>
+                </div>
+                <img class="passCardImg" src="media/passday3.svg" alt="pass 3 jours">
+                <button onclick="showSection2('section3')" class="chooseButton passCardButton"><a
+                        href="#section3">Choose</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="section2" class="passSection choice2_2 hidden">
+        <h2 class="instruction">Days choice</h2>
+        <div class="passCards">
+            <div class="passCard">
+                <div class="passCardTitle">
+                    <p class="passText">Pass</p>
+                    <p class="dayText">Friday & saturday</p>
+                </div>
+                <img class="passCardImg" src="media/passday1.svg" alt="pass 1 jour">
+                <button onclick="showSection2('section3')" class="chooseButton passCardButton"><a
+                        href="#section3">Choose</a></button>
+            </div>
+            <div class="passCard">
+                <div class="passCardTitle">
+                    <p class="passText">Pass</p>
+                    <p class="dayText">Saturday & sunday</p>
+                </div>
+                <img class="passCardImg" src="media/passday2.svg" alt="pass 2 jours">
+                <button onclick="showSection2('section3')" class="chooseButton passCardButton"><a
+                        href="#section3">Choose</a></button>
+            </div>
+            <div class="passCard">
+                <div class="passCardTitle">
+                    <p class="passText">Pass</p>
+                    <p class="dayText">Friday & Sunday</p>
+                </div>
+                <img class="passCardImg" src="media/passday3.svg" alt="pass 3 jours">
+                <button onclick="showSection2('section3')" class="chooseButton passCardButton"><a
+                        href="#section3">Choose</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="section3" class="passSection choice3 hidden">
+        <h2 class="instruction">Who am I</h2>
+        <div class="buttonsdiv">
+            <a href="hotelEN.html" target="_blank"><button
+                    class="chooseButton section3Button">particular</button></a>
+                    <a href="hotelEN.html" target="_blank"><button
+                        class="chooseButton section3Button">professional</button></a>
+        </div>
+    </section>
+    <!-- <section id="section4" class="passSetion choice3 hidden">
+        <button class="chooseButton sectionButton"><a href="hotel.html">Continuer</a></button>
+    </section> -->
+    <footer class="footer">
+        <div class="logo-footer">
+            <img src="media/civita.png" alt="civita">
+            <img src="media/logo.svg" alt="Opéra zitto">
+            <img src="media/Orpheo.png" alt="Orpheo">
+        </div>
+        <div class="info-footer">
+            <p>©2023 OperaZitto</p>
+            <p>Festival 2023</p>
+            <a href="mentionslegales.html">Legal Notices</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
